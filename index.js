@@ -13,7 +13,7 @@ export default async ({ req, res, log, error }) => {
   const databases = new Databases(client);
 
   // Retrieve environment variables for database and collection IDs
-  const databaseId = process.env.DATABASE_ID; // ID of the Appwrite database
+  const databaseId = process.env.DatabaseID; // ID of the Appwrite database
   const nutritionFactsCollectionID = process.env.nutritionFactsCollectionID; // ID of the collection containing nutrition facts
 
   try {
